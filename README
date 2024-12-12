@@ -1,0 +1,19 @@
+the purpose of Authentication is to validate only approved users to get to the website and its content
+We installed npm i express jsonwebtoken dotenv
+and npm i --save-dev nodemon
+we added     "devStart": "nodemon server.js" ,
+under scripts section in package.json
+Now go to server.js
+made requests.rest
+
+we can get a secret code by typing the following in the terminal
+1. Node 
+2. require('crypto').randomBytes(12).toString('hex'), where 12 is the size of the code
+
+ACCESS_TOKEN_SECRET and REFRESH_TOKEN_SECRET are two codes generated via the above method
+
+if we put ### in requests.rest, it will act as ';'
+
+made authServer.js
+
+we have now dedicated the authServer for authentication purpose and the normal server.js for all normal words
